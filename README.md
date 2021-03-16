@@ -1,8 +1,10 @@
 # Sidebar Admin Links plugin for Craft CMS 3.x
 
-Add links from Settings directly to the sidebar for admin users
+Add links from Settings directly to the sidebar for admin users.
 
-![Screenshot](resources/img/plugin-logo.png)
+Save yourself some clicks!
+
+![Screenshot](resources/screenshot.jpg)
 
 ## Requirements
 
@@ -12,32 +14,14 @@ This plugin requires Craft CMS 3.0.0-beta.23 or later.
 
 To install the plugin, follow these instructions.
 
-1. Open your terminal and go to your Craft project:
+1.  Open your terminal and go to your Craft project:
 
         cd /path/to/project
 
-2. Then tell Composer to load the plugin:
+2.  Then tell Composer to load the plugin:
 
         composer require danieltott/sidebar-admin-links
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Sidebar Admin Links.
-
-## Sidebar Admin Links Overview
-
--Insert text here-
-
-## Configuring Sidebar Admin Links
-
--Insert text here-
-
-## Using Sidebar Admin Links
-
--Insert text here-
-
-## Sidebar Admin Links Roadmap
-
-Some things to do, and ideas for potential features:
-
-* Release it
+3.  In the Control Panel, go to Settings → Plugins and click the “Install” button for Sidebar Admin Links.
 
 Brought to you by [Dan Ott](https://dtott.com)
