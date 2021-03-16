@@ -1,0 +1,41 @@
+{
+    "name": "danieltott/sidebar-admin-links",
+    "description": "Add links from Settings directly to the sidebar for admin users",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "sidebar admin links"
+    ],
+    "support": {
+        "docs": "https://github.com/danieltott/sidebar-admin-links/blob/master/README.md",
+        "issues": "https://github.com/danieltott/sidebar-admin-links/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Ott",
+            "homepage": "https://dtott.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "danieltott\\sidebaradminlinks\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Sidebar Admin Links",
+        "handle": "sidebar-admin-links",
+        "developer": "Dan Ott",
+        "developerUrl": "https://dtott.com",
+        "documentationUrl": "https://github.com/danieltott/sidebar-admin-links/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/danieltott/sidebar-admin-links/master/CHANGELOG.md",
+        "class": "danieltott\\sidebaradminlinks\\SidebarAdminLinks"
+    }
+}
