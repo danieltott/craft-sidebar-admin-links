@@ -89,16 +89,17 @@ class SidebarAdminLinks extends Plugin
         parent::init();
         self::$plugin = $this;
 
-        // Do something after we're installed
-        Event::on(
-            Plugins::class,
-            Plugins::EVENT_AFTER_INSTALL_PLUGIN,
-            function (PluginEvent $event) {
-                if ($event->plugin === $this) {
-                    // We were just installed
-                }
+        if (!\Craft::$app->request->getIsConsoleRequest()) {
+
+            if (
+                \Craft::$app->request->getIsCpRequest() &&
+                \Craft::$app->user &&
+                \Craft::$app->user->identity &&
+                \Craft::$app->user->identity->admin &&
+                Craft::$app->getConfig()->general->allowAdminChanges) {
+                $this->view->registerAssetBundle("danieltott\\sidebaradminlinks\\assetbundles\\sidebaradminlinks\\SidebarAdminLinksAsset");
             }
-        );
+        }
 
 /**
  * Logging in Craft involves using one of the following methods:
