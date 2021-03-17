@@ -15,6 +15,8 @@ use Craft;
 use craft\base\Plugin;
 use craft\services\Plugins;
 use craft\events\PluginEvent;
+use craft\web\View;
+use craft\helpers\UrlHelper;
 
 use yii\base\Event;
 
@@ -98,6 +100,8 @@ class SidebarAdminLinks extends Plugin
                 \Craft::$app->user->identity->admin &&
                 Craft::$app->getConfig()->general->allowAdminChanges) {
                 $this->view->registerAssetBundle("danieltott\\sidebaradminlinks\\assetbundles\\sidebaradminlinks\\SidebarAdminLinksAsset");
+                $cpUrl = UrlHelper::cpUrl();
+                $this->view->registerJs('sidebarEnhancer.init("' .  $cpUrl . '");', View::POS_END);
             }
         }
 
