@@ -46,7 +46,7 @@ var sidebarEnhancer = {
     this.$globalSidebarNav.insertAdjacentHTML('beforeend', this.sidebarString);
 
     // re-cache element now that it's in the DOM
-    this.$sidebarNavItems = document.querySelectorAll('.system-menu a');
+    this.$sidebarNavItems = document.querySelectorAll('[data-sbal] a');
   },
 
   getActive: function () {
