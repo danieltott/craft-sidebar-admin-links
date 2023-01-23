@@ -1,4 +1,4 @@
-# Sidebar Admin Links plugin for Craft CMS 3.x
+# Sidebar Admin Links plugin for Craft CMS 4.x
 
 Add links from Settings directly to the sidebar for admin users.
 
@@ -8,7 +8,9 @@ Save yourself some clicks!
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+This plugin requires Craft CMS 4
+
+For Craft 3, see the [Craft 3 branch](https://github.com/danieltott/craft-sidebar-admin-links/tree/craft3)
 
 ## Installation
 
